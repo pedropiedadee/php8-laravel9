@@ -1,9 +1,17 @@
 <?php
-//!= verica se e igual
-//!== verifica se o tipo e o valor são iguais
 
-$result = 50 !== '50';
 
-var_dump($result);
+$canAccess = true;
+$isOlder= false;
+
+$result = $canAccess or $isOlder;
+
+///Truthy and False
+
+$name = "";
+
+var_dump(!!$name);
+
+var_dump(!!$result);
 
 ?>
