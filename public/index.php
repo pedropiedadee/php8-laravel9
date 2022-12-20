@@ -2,7 +2,9 @@
 
 $number = 10;
 
-$number += 10;
+echo ++$number;
+
+echo $number--;
 
 echo $number;
 
