@@ -1,10 +1,9 @@
 <?php
 
+$number = 10;
 
-$a = 10;
-$b = 10;
+$number += 10;
 
-echo $a + $b;
-
+echo $number;
 
 ?>
