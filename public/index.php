@@ -1,11 +1,9 @@
 <?php
+//!= verica se e igual
+//!== verifica se o tipo e o valor são iguais
 
-$number = 10;
+$result = 50 !== '50';
 
-echo ++$number;
-
-echo $number--;
-
-echo $number;
+var_dump($result);
 
 ?>
