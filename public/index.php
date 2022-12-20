@@ -1,17 +1,13 @@
 <?php
 
+$nome = "Pedro";
 
-$canAccess = true;
-$isOlder= false;
+echo $nome;
 
-$result = $canAccess or $isOlder;
-
-///Truthy and False
-
-$name = "";
-
-var_dump(!!$name);
-
-var_dump(!!$result);
+if(!!$nome){
+  echo ' teste';
+}else{
+  echo 'deu falsy';
+}
 
 ?>
