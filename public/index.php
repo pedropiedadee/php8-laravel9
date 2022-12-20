@@ -1,14 +1,10 @@
 <?php
 
 
-$name = "Pedro";
+$a = 10;
+$b = 10;
 
-$myName = &$name;
-
-$name = "João";
-
-echo $name;
-echo $myName;
+echo $a + $b;
 
 
 ?>
