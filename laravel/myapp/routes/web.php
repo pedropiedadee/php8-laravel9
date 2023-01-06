@@ -11,8 +11,8 @@ Route::get('/redirect', function(Request $request) {
     return 'x';
 });
 
-Route::get('user/{user}', [UserController::class, 'show']);
+Route::get('user/{user}', [UserController::class, 'show'])->name('user.show');
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
