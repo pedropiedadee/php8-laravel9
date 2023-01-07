@@ -4,4 +4,4 @@
 
 {{ $name }} <br>
 
-{{ $user }}
+{{ $user->name }}
