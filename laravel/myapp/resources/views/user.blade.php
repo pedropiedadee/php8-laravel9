@@ -1,7 +1,15 @@
-<h1>
-  hello world
-</h1>
+@extends('layouts.default')
 
-{{ $name }} <br>
+@section('title', 'Meu User')
 
-{{ $user->name }}
+@section('sidebar')
+
+@section('content')
+  <h1>
+    hello world
+  </h1>
+
+  {{ $name }} <br>
+
+  {{ $user->name }}
+@endsection
