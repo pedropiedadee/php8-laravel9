@@ -1,9 +1,12 @@
 <?php
 
+use App\Http\Controllers\BusinessController;
 use App\Http\Controllers\UserController;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+
+Route::get('businesses', [BusinessController::class, 'index']);
 
 Route::get('/redirect', function(Request $request) {
     $r = $request->input();
