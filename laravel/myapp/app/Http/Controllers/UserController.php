@@ -17,6 +17,12 @@ class UserController extends Controller
 
     public function show(User $user)
     {
+        $user->posts()->create([
+            'title' => 'Meu primeiro post',
+            'content' => 'Esse é meu post',
+        ]);
+       // $user->posts()->delete();
+        dd($user->posts->toArray());
         return view ('user', [
             'name' => 'Pedro Piedade',
             'user' => $user,
