@@ -14,4 +14,11 @@ class Post extends Model
         'content', 
         'tags',
     ];
+
+    protected $with = ['user'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
