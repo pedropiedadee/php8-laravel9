@@ -10,13 +10,16 @@ class BusinessController extends Controller
 {
     public function index()
     {          
-        $business = Business::find(1)->delete();
-        
-        $business = Business::find(1);
-        dd($business->toSql());
+        return view('businesses');
 
-        $business = Business::find(1);
-        dd($business->toArray());
+
+        // $business = Business::find(1)->delete();
+        
+        // $business = Business::find(1);
+        // dd($business->toSql());
+
+        // $business = Business::find(1);
+        // dd($business->toArray());
 
 
     }
